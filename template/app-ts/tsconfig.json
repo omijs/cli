@@ -1,19 +1,25 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "target": "ES5",
     "experimentalDecorators": true,
-    "jsx": "react",
+    "useDefineForClassFields": true,
+    "lib": ["ES6", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
     "jsxFactory": "h",
-    "target": "es5",
-    "outDir": "dist",
-    //https://github.com/microsoft/TypeScript/issues/6945
-    //https://basarat.gitbook.io/typescript/type-system/lib.d.ts#lib-option
-    "lib": [
-      "dom",
-      "es6"
-    ]
+    "jsxFragmentFactory": "h.f",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
