@@ -36,6 +36,18 @@ program
   });
 
   program
+  .command('init-tw')
+  .arguments('<projectName>')
+  .description('Initialize a new omi application in the current folder')
+  .action(function (projectName, option) {
+    var cmd = 'init-tw';
+    if (option.parent.mirror && typeof option.parent.mirror === 'string') {
+      options.mirror = option.parent.mirror;
+    }
+    switchCommand(cmd, { project: projectName, mirror: options.mirror, language: options.language });
+  });
+
+  program
   .command('init-js')
   .arguments('<projectName>')
   .description('Initialize a new omi application in the current folder')
