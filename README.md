@@ -9,6 +9,16 @@ $ npm start           # develop
 $ npm run build       # release
 ```
 
+### New Project base on TypeScript + Tailwindcss
+
+```bash
+$ npx omi-cli init-tw my-app
+$ cd my-app           
+$ npm start           # develop
+$ npm run build       # release
+```
+
+
 ### New Project base on JavaScript
 
 ```bash
