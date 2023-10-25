@@ -36,11 +36,11 @@ program
   });
 
   program
-  .command('init-tw')
+  .command('init-spa')
   .arguments('<projectName>')
   .description('Initialize a new omi application in the current folder')
   .action(function (projectName, option) {
-    var cmd = 'init-tw';
+    var cmd = 'init-spa';
     if (option.parent.mirror && typeof option.parent.mirror === 'string') {
       options.mirror = option.parent.mirror;
     }
