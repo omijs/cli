@@ -37,12 +37,12 @@ export const routes = [
             ]}
             data={async () => {
               const fetchPromises = [
-                new Promise((resolve, reject) => {
+                new Promise((resolve) => {
                   setTimeout(() => {
                     resolve({ name: 'omi' })
                   }, 1000)
                 }),
-                new Promise((resolve, reject) => {
+                new Promise((resolve) => {
                   setTimeout(() => {
                     resolve({ age: 5 })
                   }, 1000)
@@ -84,7 +84,7 @@ export const routes = [
     }
   }, {
     path: '/before-enter/test',
-    beforeEnter: (to: string, from: string) => {
+    beforeEnter: () => {
       // reject the navigation
       return false
     },
