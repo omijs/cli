@@ -1,6 +1,6 @@
 {
   "name": "omi-cli",
-  "version": "3.9.3",
+  "version": "3.9.4",
   "description": "Create website, app base on omi with no build configuration.",
   "main": "bin/omi",
   "engines": {

@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "omi": "^7.1.0"
+    "omi": "latest"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
