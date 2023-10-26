@@ -1,6 +1,7 @@
-import './components/suspense'
+import 'omi-suspense'
 import './index.css'
 import './components/site-header'
+import { userState } from './store'
 
 export const routes = [
   {
@@ -50,6 +51,12 @@ export const routes = [
               ]
               const responses = await Promise.all(fetchPromises)
               return responses
+            }}
+            onDataLoaded={(event: CustomEvent) => {
+              userState.value.name = event.detail[0].name
+              userState.value.age = event.detail[1].age
+              // trigger ui auto update
+              userState.update()
             }}
           >
             <div slot="pending">Loading user profile...</div>
