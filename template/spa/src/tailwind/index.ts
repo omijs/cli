@@ -1,7 +1,9 @@
-import { css } from 'omi'
+import { css, globalCSS } from 'omi'
 
 import tailwindStyle from './tailwind.css?inline'
 
 export const tailwind = css`
   ${tailwindStyle}
 `
+
+globalCSS(tailwind)

@@ -2,32 +2,23 @@
 
 ### New Project base on TypeScript
 
+To quickly create an Omi + Vite + TS/JS project:
+
 ```bash
-$ npx omi-cli init my-app
+$ npx omi-cli init my-app    # or create js project by: npx omi-cli init-js my-app
 $ cd my-app           
 $ npm start           # develop
 $ npm run build       # release
 ```
 
-### New Project base on TypeScript + Tailwindcss
+### New Project base on TypeScript + Tailwindcss + Router + Suspense + Vite project
 
 ```bash
-$ npx omi-cli init-tw my-app
+$ npx omi-cli init-spa my-app  
 $ cd my-app           
 $ npm start           # develop
 $ npm run build       # release
 ```
-
-
-### New Project base on JavaScript
-
-```bash
-$ npx omi-cli init-js my-app
-$ cd my-app           
-$ npm start           # develop
-$ npm run build       # release
-```
-
 
 <!-- 
 ### New Component by Omi

@@ -1,10 +1,9 @@
 import { routes } from './routes'
 import { Router} from 'omi-router'
-import { tailwind } from './tailwind'
+import './tailwind'
 
 new Router({
   routes,
-  css: [tailwind],
   renderTo: '#app'
 })
 

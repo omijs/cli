@@ -1,10 +1,9 @@
 import { tag, Component } from 'omi'
 import css from '../app.css?raw'
-import { tailwind } from '../tailwind'
 
 @tag('site-header')
 export default class extends Component {
-  static css = [tailwind, css]
+  static css = css
 
   render() {
     return (
