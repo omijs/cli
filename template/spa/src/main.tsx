@@ -1,9 +1,13 @@
 import { routes } from './routes'
-import { Router} from 'omi-router'
-import './tailwind'
+import { Router } from 'omi-router'
+import './tailwind/index'
 
-new Router({
+const router = new Router({
   routes,
-  renderTo: '#app'
+  renderTo: '#app',
 })
 
+router.afterEach(() => {
+  window.scrollTo(0, 0)
+  window.refreshDark()
+})

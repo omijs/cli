@@ -1,4 +1,8 @@
-# Omi TypeScript + Tailwindcss starter
+# Omi Templates
+
+> 100+ OMI Tailwind Templates, coming...
+
+* [🎉Preview](https://omi.cdn-go.cn/templates/latest/#/)
 
 ## Setup
 
@@ -20,11 +24,4 @@ npm start
 
 ```bash
 npm run build
-```
-
-## Prettier
-
-
-```bash
-npm run p
 ```
