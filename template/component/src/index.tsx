@@ -21,7 +21,7 @@ export default class Counter extends WeElement {
 
   // 使用内部状态
   state = {
-    count: 2,
+    count: 2
   }
 
   @bind

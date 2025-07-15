@@ -69,12 +69,12 @@ ${pkg.docsExtend.cnDescription}
 
 ${generateImportAndUsageDocs('zh', {
   pkgName,
-  tagName,
+  tagName
 })}
 ${generateAPIDocs('zh', {
   props,
   defaultProps,
-  eventMap,
+  eventMap
 })}
 `
 
@@ -101,12 +101,12 @@ ${pkg.description}
 
 ${generateImportAndUsageDocs('en', {
   pkgName,
-  tagName,
+  tagName
 })}
 ${generateAPIDocs('en', {
   props,
   defaultProps,
-  eventMap,
+  eventMap
 })}
 `
 

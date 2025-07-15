@@ -5,6 +5,6 @@ export default defineConfig({
   base: './',
   esbuild: {
     jsxFactory: 'h',
-    jsxFragment: 'h.f',
-  },
+    jsxFragment: 'h.f'
+  }
 })

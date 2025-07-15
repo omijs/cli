@@ -5,25 +5,25 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   css: {
     modules: {
-      localsConvention: 'camelCase',
-    },
+      localsConvention: 'camelCase'
+    }
   },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.tsx'),
       name: 'index',
       formats: ['es', 'umd'],
-      fileName: format => `index.${format}.js`,
+      fileName: format => `index.${format}.js`
     },
     rollupOptions: {
       external: /^omi/,
       input: {
-        main: resolve(__dirname, 'index.html'),
-      },
-    },
+        main: resolve(__dirname, 'index.html')
+      }
+    }
   },
   esbuild: {
     jsxFactory: 'h',
-    jsxFragment: 'h.f',
-  },
+    jsxFragment: 'h.f'
+  }
 })
