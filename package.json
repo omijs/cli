@@ -38,5 +38,12 @@
   "bugs": {
     "url": "https://github.com/Tencent/omi/issues"
   },
-  "homepage": "http://omijs.org"
+  "homepage": "http://omijs.org",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
 }

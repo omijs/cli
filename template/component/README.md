@@ -7,7 +7,7 @@ Description for component.
 ## Import
 
 ```js
-import "@omiu/counter_to_be_replace";
+import '@omiu/counter_to_be_replace'
 ```
 
 Or use script tag to ref it.

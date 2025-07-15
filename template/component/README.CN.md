@@ -14,7 +14,7 @@
 ## 导入
 
 ```js
-import "@omiu/counter_to_be_replace";
+import '@omiu/counter_to_be_replace'
 ```
 
 或者直接 script 标签引入。
@@ -44,7 +44,7 @@ import "@omiu/counter_to_be_replace";
 
 ```tsx
 {
-  count: 1;
+  count: 1
 }
 ```
 

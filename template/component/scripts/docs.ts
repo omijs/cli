@@ -29,7 +29,7 @@ ${defaultProps}
   let eventsDocs = ''
   if (eventMap) {
     eventsDocs = `### ${t('events', locale)}\n`
-    Object.keys(eventMap).forEach((event) => {
+    Object.keys(eventMap).forEach(event => {
       eventsDocs += `\n- ${event}`
     })
   }

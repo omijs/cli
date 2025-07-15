@@ -39,11 +39,11 @@ let eventMap:
   | undefined = undefined
 
 if (eventContexts) {
-  events = eventContexts.map((event) => {
+  events = eventContexts.map(event => {
     return event.replace("this.fire('", '').replace("',", '').replace("')", '')
   })
   eventMap = {}
-  events.forEach((event) => {
+  events.forEach(event => {
     if (eventMap) {
       eventMap[event] = 1
     }
@@ -69,12 +69,12 @@ ${pkg.docsExtend.cnDescription}
 
 ${generateImportAndUsageDocs('zh', {
   pkgName,
-  tagName
+  tagName,
 })}
 ${generateAPIDocs('zh', {
   props,
   defaultProps,
-  eventMap
+  eventMap,
 })}
 `
 
@@ -101,12 +101,12 @@ ${pkg.description}
 
 ${generateImportAndUsageDocs('en', {
   pkgName,
-  tagName
+  tagName,
 })}
 ${generateAPIDocs('en', {
   props,
   defaultProps,
-  eventMap
+  eventMap,
 })}
 `
 

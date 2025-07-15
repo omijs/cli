@@ -5,7 +5,7 @@ import css from './app.css?raw'
 const count = signal(0)
 
 define(
-  "my-app",
+  'my-app',
   class extends Component {
     static css = css
 
@@ -37,7 +37,7 @@ define(
             Click on the Vite and Omi logos to learn more
           </p>
         </>
-      );
+      )
     }
   }
-);
+)

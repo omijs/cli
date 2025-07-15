@@ -2,7 +2,7 @@
 
 > 100+ OMI Tailwind Templates, coming...
 
-* [🎉Preview](https://omi.cdn-go.cn/templates/latest/#/)
+- [🎉Preview](https://omi.cdn-go.cn/templates/latest/#/)
 
 ## Vite 版本
 
@@ -18,13 +18,11 @@ npm i
 
 ## Development
 
-
 ```bash
 npm start
 ```
 
 ## Build
-
 
 ```bash
 npm run build

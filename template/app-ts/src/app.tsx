@@ -5,7 +5,7 @@ import { tailwind } from './tailwind'
 
 const count = signal(0)
 
-@tag("my-app")
+@tag('my-app')
 export default class extends Component {
   static css = [tailwind, css]
 
@@ -41,6 +41,6 @@ export default class extends Component {
           Click on the Vite and Omi logos to learn more
         </p>
       </>
-    );
+    )
   }
 }

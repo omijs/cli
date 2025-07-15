@@ -20,8 +20,8 @@ export default class MyDemo extends WeElement {
         <o-counter onCountChanged={this.onChanged}></o-counter>
         <p>当前计数: {this.count}</p>
       </div>
-    );
+    )
   }
 }
 
-render(<my-demo></my-demo>, "body")
+render(<my-demo></my-demo>, 'body')

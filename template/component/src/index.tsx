@@ -6,7 +6,7 @@ declare global {
     interface IntrinsicElements {
       [tagName]: Omi.Props & {
         onCountChanged?: (evt: CustomEvent) => void
-      };
+      }
     }
   }
 }
@@ -17,25 +17,25 @@ export default class Counter extends WeElement {
     span {
       color: red;
     }
-  `;
+  `
 
   // 使用内部状态
   state = {
     count: 2,
-  };
+  }
 
   @bind
   minus() {
-    this.state.count--;
-    this.update();
-    this.fire("count-changed", this.state.count);
+    this.state.count--
+    this.update()
+    this.fire('count-changed', this.state.count)
   }
 
   @bind
   plus() {
-    this.state.count++;
-    this.update();
-    this.fire("count-changed", this.state.count);
+    this.state.count++
+    this.update()
+    this.fire('count-changed', this.state.count)
   }
 
   render() {
@@ -45,6 +45,6 @@ export default class Counter extends WeElement {
         <span>{this.state.count}</span>
         <button onClick={this.plus}>+</button>
       </div>
-    );
+    )
   }
 }
