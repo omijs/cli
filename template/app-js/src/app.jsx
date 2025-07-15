@@ -1,13 +1,13 @@
-import { h, signal, Component, define } from "omi";
-import viteLogo from "/vite.svg";
-import css from "./app.css?raw";
+import { h, signal, Component, define } from 'omi'
+import viteLogo from '/vite.svg'
+import css from './app.css?raw'
 
-const count = signal(0);
+const count = signal(0)
 
 define(
   "my-app",
   class extends Component {
-    static css = css;
+    static css = css
 
     render() {
       return (

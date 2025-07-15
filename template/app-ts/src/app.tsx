@@ -1,13 +1,13 @@
-import { h, tag, signal, Component } from "omi";
-import viteLogo from "/vite.svg";
-import css from "./app.css?raw";
-import { tailwind } from "./tailwind";
+import { h, tag, signal, Component } from 'omi'
+import viteLogo from '/vite.svg'
+import css from './app.css?raw'
+import { tailwind } from './tailwind'
 
-const count = signal(0);
+const count = signal(0)
 
 @tag("my-app")
 export default class extends Component {
-  static css = [tailwind, css];
+  static css = [tailwind, css]
 
   render() {
     return (

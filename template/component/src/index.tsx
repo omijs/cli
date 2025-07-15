@@ -1,11 +1,11 @@
-import { tag, h, WeElement, bind } from "omi";
+import { tag, h, WeElement, bind } from 'omi'
 
-const tagName = "o-counter";
+const tagName = 'o-counter'
 declare global {
   namespace JSX {
     interface IntrinsicElements {
       [tagName]: Omi.Props & {
-        onCountChanged?: (evt: CustomEvent) => void;
+        onCountChanged?: (evt: CustomEvent) => void
       };
     }
   }

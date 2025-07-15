@@ -1,17 +1,17 @@
-import { tag, h, WeElement, render, bind } from "omi";
+import { tag, h, WeElement, render, bind } from 'omi'
 
-import "./index.tsx";
+import './index.tsx'
 
-const tagName = "my-demo";
+const tagName = 'my-demo'
 
 @tag(tagName)
 export default class MyDemo extends WeElement {
-  count = 2;
+  count = 2
 
   @bind
   onChanged(evt: CustomEvent) {
-    this.count = evt.detail;
-    this.update();
+    this.count = evt.detail
+    this.update()
   }
 
   render() {
@@ -24,4 +24,4 @@ export default class MyDemo extends WeElement {
   }
 }
 
-render(<my-demo></my-demo>, "body");
+render(<my-demo></my-demo>, "body")
