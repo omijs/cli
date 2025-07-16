@@ -1,57 +1,50 @@
-import { tag, h, WeElement, OverwriteProps } from 'omi'
-
-import * as css from './index.scss'
-
-export type Attrs = {
-  count?: number
-  onCountChanged?: (evt: CustomEvent) => void
-}
+import { tag, h, WeElement, bind } from 'omi'
 
 const tagName = 'o-counter'
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      [tagName]: Omi.Props & Attrs
+      [tagName]: Omi.Props & {
+        onCountChanged?: (evt: CustomEvent) => void
+      }
     }
   }
 }
 
-export type Props = OverwriteProps<Attrs, { count: number }>
-
 @tag(tagName)
-export default class Counter extends WeElement<Props> {
-  static css = css.default ? css.default : css
+export default class Counter extends WeElement {
+  static css = `
+    span {
+      color: red;
+    }
+  `
 
-  static defaultProps = {
-    count: 1
+  // 使用内部状态
+  state = {
+    count: 2
   }
 
-  static propTypes = {
-    count: Number
+  @bind
+  minus() {
+    this.state.count--
+    this.update()
+    this.fire('count-changed', this.state.count)
   }
 
-  minus = () => {
-    this.updateProps({
-      count: this.props.count - 1
-    })
-    this.fire('count-changed', this.props.count)
+  @bind
+  plus() {
+    this.state.count++
+    this.update()
+    this.fire('count-changed', this.state.count)
   }
 
-  plus = () => {
-    this.updateProps({
-      count: this.props.count + 1
-    })
-    this.fire('count-changed', this.props.count)
-  }
-
-  render(props: Props) {
+  render() {
     return (
-      // <h.f></h.f> or <></> are supported
-      <h.f>
+      <div>
         <button onClick={this.minus}>-</button>
-        <span>{props.count}</span>
+        <span>{this.state.count}</span>
         <button onClick={this.plus}>+</button>
-      </h.f>
+      </div>
     )
   }
 }

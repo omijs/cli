@@ -7,6 +7,10 @@
   (<a href='https://codepen.io/omijs'>@omijs</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+## Vite 版本
+
+当前模板已升级至 Vite 7.0.4，相关依赖也已同步更新。
+
 ## 导入
 
 ```js

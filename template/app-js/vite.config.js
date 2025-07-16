@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: './',
   esbuild: {
-    jsxFactory: "h",
-    jsxFragment: "h.f"
-  },
+    jsxFactory: 'h',
+    jsxFragment: 'h.f'
+  }
 })

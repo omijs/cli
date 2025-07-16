@@ -7,12 +7,12 @@ export default defineConfig({
   esbuild: {
     jsxFactory: 'h',
     jsxFragment: 'h.f',
-    jsxInject: `import { h } from 'omi'`
+    jsxInject: `import { h } from 'omi'`,
   },
   resolve: {
     alias: {
       // "omi": resolve("./src/omi/index.ts"),
-      "@": resolve("./src/"),
+      '@': resolve('./src/'),
     },
   },
 })
